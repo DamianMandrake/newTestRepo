@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyPlayer</string>
+    <string name="ask_perms">Request permission</string>
+</resources>
