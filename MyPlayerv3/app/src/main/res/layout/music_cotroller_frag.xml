@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <!--tbd - button title and imageview -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/topSection">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:id="@+id/smallAlbumArt"
+
+            />
+
+
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/smallSongTitle"
+
+
+            android:layout_gravity="center" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toggle_images"
+            android:layout_gravity="right"
+            android:textOff=""
+            android:textOn=""
+            android:id="@+id/smallPlayPlause"
+
+
+            />
+
+
+    </FrameLayout>
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/topSection"
+        android:id="@+id/imageAlbumArt"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:id="@+id/artist"
+        android:layout_below="@+id/imageAlbumArt"
+        android:text="asdasd"
+
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/songName"
+        android:layout_below="@+id/artist"
+        android:text="asdsd"
+        android:textSize="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/buttonPlaceholder"
+        android:layout_below="@+id/songName"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/prev"
+            android:src="@mipmap/previous"
+            android:layout_gravity="left"
+
+            />
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/toggle_images"
+            android:id="@+id/playPause"
+            android:textOn=""
+            android:textOff=""
+
+            android:layout_gravity="center"
+
+            />
+
+
+
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/nextSong"
+            android:src="@mipmap/next"
+
+            android:layout_gravity="right"
+            />
+
+
+
+    </LinearLayout>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/buttonPlaceholder"
+        android:id="@+id/musicSeekbar"
+
+        />
+
+</RelativeLayout>
